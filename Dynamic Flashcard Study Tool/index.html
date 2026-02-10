@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Flashcard Study Tool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>📘 Dynamic Flashcard Study Tool</h1>
+
+  <div class="card-container">
+    <div class="flashcard" id="flashcard">
+      <div id="cardContent">Loading...</div>
+    </div>
+
+    <p id="cardCounter">0 / 0</p>
+
+    <div class="buttons">
+      <button id="flipBtn" class="secondary">Flip 🔄</button>
+      <button id="nextBtn" class="primary">Next ➡️</button>
+      <button id="knownBtn" class="success">Mark Known ✔</button>
+    </div>
+  </div>
+
+  <div class="progress">
+    <h2>📊 Study Progress</h2>
+    <p>Known Cards: <span id="knownCount">0</span></p>
+    <p>Remaining Cards: <span id="remainingCount">0</span></p>
+
+    <ul id="knownList"></ul>
+
+    <button id="resetBtn" class="danger">Reset 🔄</button>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
